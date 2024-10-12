@@ -1,0 +1,49 @@
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-btn-group{
+    display: flex;
+    gap: 5px;
+}
+
+.action-btn-create {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background: rgb(32, 205, 17);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-btn-update {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background: rgba(90, 90, 255, 0.85);
+    color: white;
+    border-radius: 5px;
+}
+
+.action-btn-delete {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background:  rgba(250, 32, 32, 0.039);;
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+}

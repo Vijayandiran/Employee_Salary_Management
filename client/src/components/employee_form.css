@@ -1,0 +1,99 @@
+
+/* Fade-in animation for the form container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  /* Form container styling with fade-in animation */
+  .emp-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    animation: fadeIn 1s ease-out;
+    word-spacing: 10px;
+  }
+  
+  /* Heading styling */
+  .emp-form--title {
+    color: #6a5acd;
+    text-align: center;
+  }
+  
+  /* Label styling */
+  .emp-form label {
+    display: block;
+    margin-top: 15px;
+    color: #4b0082;
+    font-weight: bold;
+  }
+  
+  /* Input, select, and textarea styling */
+  .emp-form input[type="text"],
+  .emp-form input[type="number"],
+  .emp-form select,
+  .emp-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+  }
+  
+  /* Focus effect on input, select, and textarea */
+  .emp-form input:focus,
+  .emp-form select:focus,
+  .emp-form textarea:focus {
+    border-color: #6a5acd;
+    outline: none;
+  }
+  
+  /* Radio group styling */
+  .emp-form .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Button styling with hover animation */
+  .emp-form button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-right: 5px;
+  }
+  
+  /* Button bounce animation */
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+  }
+  
+  /* Hover effect on button */
+  .emp-form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    animation: bounce 0.3s;
+  }

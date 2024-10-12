@@ -1,0 +1,11 @@
+/* Body styling */
+*, ::after, ::before{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+  margin: 0;
+}
